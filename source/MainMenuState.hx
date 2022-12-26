@@ -39,11 +39,10 @@ class MainMenuState extends MusicBeatState
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
 		#if !switch 'donate', #end
-		'options'
-		'shop'
-		'tools'
+		'options',
+		'shop',
+		'tools',
 		'kits'
-		'events'
 	];
 
 	var magenta:FlxSprite;
@@ -251,17 +250,14 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new AchievementsMenuState());
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
+									case 'shop':
+										MusicBeatState.switchState(new StoryMenuState());
+									case 'tools':
+										MusicBeatState.switchState(new StoryMenuState());
+									case 'kits':
+										MusicBeatState.switchState(new StoryMenuState());
 									case 'options':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
-									case
-					 'shop':
-										MusicBeatState.switchState(new StoryMenuState());
-									case
-					 'tools':
-										MusicBeatState.switchState(new StoryMenuState());
-									case
-					 'kits':
-										MusicBeatState.switchState(new StoryMenuState());
 								}
 							});
 						}
