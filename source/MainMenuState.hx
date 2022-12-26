@@ -40,6 +40,10 @@ class MainMenuState extends MusicBeatState
 		'credits',
 		#if !switch 'donate', #end
 		'options'
+		'shop'
+		'tools'
+		'kits'
+		'events'
 	];
 
 	var magenta:FlxSprite;
@@ -249,6 +253,15 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
+									case
+					 'shop':
+										MusicBeatState.switchState(new StoryMenuState());
+									case
+					 'tools':
+										MusicBeatState.switchState(new StoryMenuState());
+									case
+					 'kits':
+										MusicBeatState.switchState(new StoryMenuState());
 								}
 							});
 						}
