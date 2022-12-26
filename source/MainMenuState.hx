@@ -25,7 +25,7 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var psychEngineVersion:String = '0.5.2h'; //This is also used for Discord RPC
+	public static var psychEngineVersion:String = '0.1.0'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -42,7 +42,10 @@ class MainMenuState extends MusicBeatState
 		'options',
 		'shop',
 		'tools',
-		'kits'
+		'kits',
+		'gallery',
+		'songs',
+		'how_to_play'
 	];
 
 	var magenta:FlxSprite;
@@ -255,6 +258,12 @@ class MainMenuState extends MusicBeatState
 									case 'tools':
 										MusicBeatState.switchState(new StoryMenuState());
 									case 'kits':
+										MusicBeatState.switchState(new StoryMenuState());
+									case 'how_to_play':
+										MusicBeatState.switchState(new StoryMenuState());
+									case 'gallery':
+										MusicBeatState.switchState(new StoryMenuState());
+									case 'songs':
 										MusicBeatState.switchState(new StoryMenuState());
 									case 'options':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
