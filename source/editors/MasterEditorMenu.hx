@@ -26,7 +26,16 @@ class MasterEditorMenu extends MusicBeatState
 		'Dialogue Editor',
 		'Dialogue Portrait Editor',
 		'Character Editor',
-		'Chart Editor'
+		'Chart Editor',
+		'Stage Editor',
+		'Archievements Editor',
+		'Haxe Editor',
+		'Py Editor',
+		'Java Editor',
+		'Console',
+		'Objects Editor',
+		'Buttons Editor',
+		'UI Editor'
 	];
 	private var grpTexts:FlxTypedGroup<Alphabet>;
 	private var directories:Array<String> = [null];
@@ -121,6 +130,24 @@ class MasterEditorMenu extends MusicBeatState
 				case 'Character Editor':
 					LoadingState.loadAndSwitchState(new CharacterEditorState(Character.DEFAULT_CHARACTER, false));
 				case 'Week Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Stage Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Archievements Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Haxe Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Py Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Java Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Console':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Objects Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Buttons Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'UI Editor':
 					MusicBeatState.switchState(new WeekEditorState());
 				case 'Menu Character Editor':
 					MusicBeatState.switchState(new MenuCharacterEditorState());
