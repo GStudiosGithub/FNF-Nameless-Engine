@@ -132,7 +132,7 @@ class MasterEditorMenu extends MusicBeatState
 				case 'Week Editor':
 					MusicBeatState.switchState(new WeekEditorState());
 				case 'Stage Editor':
-					MusicBeatState.switchState(new WeekEditorState());
+					MusicBeatState.switchState(new StageEditorState());
 				case 'Archievements Editor':
 					MusicBeatState.switchState(new WeekEditorState());
 				case 'Haxe Editor':
