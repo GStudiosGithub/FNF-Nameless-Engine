@@ -29,6 +29,8 @@ class MasterEditorMenu extends MusicBeatState
 		'Chart Editor',
 		'Stage Editor',
 		'Archievements Editor',
+		'Event Editor', 
+		'Shader Editor', 
 		'Haxe Editor',
 		'Py Editor',
 		'Java Editor',
@@ -132,8 +134,12 @@ class MasterEditorMenu extends MusicBeatState
 				case 'Week Editor':
 					MusicBeatState.switchState(new WeekEditorState());
 				case 'Stage Editor':
-					MusicBeatState.switchState(new WeekEditorState());
+					MusicBeatState.switchState(new StageEditorState());
 				case 'Archievements Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Event Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Shader Editor':
 					MusicBeatState.switchState(new WeekEditorState());
 				case 'Haxe Editor':
 					MusicBeatState.switchState(new WeekEditorState());
